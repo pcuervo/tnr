@@ -15,13 +15,14 @@
 	<?php parallax_hook_header_bottom(); ?>
 </header>
 <!-- /END HOME / HEADER  -->
+
 <?php parallax_hook_header_after(); ?>
 
 <?php parallax_hook_content_before(); ?>
+
 <div role="main" id="content" class="content-warp">
 	<?php parallax_hook_content_top(); ?>
 	<div class="container">
-
 		<div id="primary" class="content-area col-md-8 post-list">
 			<main <?php if(have_posts()) echo 'itemscope itemtype="http://schema.org/Blog"'; ?> id="main" class="site-main" role="main">
 

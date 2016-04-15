@@ -107,8 +107,10 @@
 														} else {
 															if(!empty($parallax_one_service_box->title)){
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.$parallax_one_service_box->title.'"/>';
+																echo '<a href="'.esc_url($parallax_one_link_services).'"><img src="'.parallax_one_make_protocol_relative_url($parallax_one_logo->image_url).'" alt="'. esc_html__('Aplicación','parallax-one') .'"></a>'; /*ICON APLICACIONES*/
 															} else {
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.esc_html__('Featured Image','parallax-one').'"/>';
+																echo '<a href="'.esc_url($parallax_one_link_services).'"><img src="'.parallax_one_make_protocol_relative_url($parallax_one_logo->image_url).'" alt="'. esc_html__('Aplicación','parallax-one') .'"></a>'; /*ICON APLICACIONES*/
 															}
 														}
 													}
@@ -120,7 +122,6 @@
 
 														$parallax_one_title_services = icl_t('Featured Area',$parallax_one_service_box->id.'_services_title',$parallax_one_service_box->title);
 														$parallax_one_link_services = icl_t('Featured Area',$parallax_one_service_box->id.'_services_link',$parallax_one_service_box->link);
-
 														echo '<h3 class="colored-text"><a href="'.esc_url($parallax_one_link_services).'">'.esc_attr($parallax_one_title_services).'</a></h3>';
 
 													} else {
@@ -152,8 +153,8 @@
 						}
 					?>
 					<div class="[ clearfix ]"></div>
-					<div class="[ services-wrap ]">
-						<a href="http://www.tnrdoors.com/"><button class="standard-button">Más productos</button></a>
+					<div id="clients" class="[ services-wrap ]">
+						<a href="http://www.tnrdoors.com/" target="_blank"><button class="standard-button">Más productos</button></a>
 					</div>
 				</div>
 			</div>
@@ -182,3 +183,53 @@
 		}
 	}
 ?>
+
+<!-- =========================
+ SECTION: CLIENTS LOGOs
+============================== -->
+<?php
+	$parallax_one_logos = get_theme_mod('parallax_one_logos_content',
+		json_encode(
+			array(
+				array("image_url" => parallax_get_file('/images/companies/1.png') ,"link" => "#" ),
+				array("image_url" => parallax_get_file('/images/companies/2.png') ,"link" => "#" ),
+				array("image_url" => parallax_get_file('/images/companies/3.png') ,"link" => "#" ),
+				array("image_url" => parallax_get_file('/images/companies/4.png') ,"link" => "#" ),
+				array("image_url" => parallax_get_file('/images/companies/5.png') ,"link" => "#" )
+			)
+		)
+	);
+	if(!empty($parallax_one_logos)){
+		$parallax_one_logos_decoded = json_decode($parallax_one_logos);
+		parallax_hook_logos_before();
+		echo '<div class="clients white-bg" role="region" aria-label="'.__('Affiliates Logos','parallax-one').'">';
+		parallax_hook_logos_top();
+		echo '<div class="container">';
+			echo '<div class="section-header">';
+				echo '<h2 class="dark-text">Aplicaciones</h2><div class="colored-line"></div>';
+			echo '</div>';
+			echo '<ul class="client-logos padding-bottom--50">';
+			foreach($parallax_one_logos_decoded as $parallax_one_logo){
+				if(!empty($parallax_one_logo->image_url)){
+
+					echo '<li>';
+					if(!empty($parallax_one_logo->link)){
+						echo '<a href="'.$parallax_one_logo->link.'" title="">';
+							echo '<img src="'.parallax_one_make_protocol_relative_url($parallax_one_logo->image_url).'" alt="'. esc_html__('Logo','parallax-one') .'">';
+						echo '</a>';
+					} else {
+						echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_logo->image_url)).'" alt="'.esc_html__('Logo','parallax-one').'">';
+					}
+					echo '</li>';
+
+
+				}
+			}
+			echo '</ul>';
+		echo '</div>';
+		parallax_hook_logos_bottom();
+		echo '</div>';
+		parallax_hook_logos_after();
+	}
+?>
+

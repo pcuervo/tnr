@@ -11,6 +11,9 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		<?php parallax_hook_header_bottom(); ?>
 	</header>
 	<!-- /END HOME / HEADER  -->
+	<div class="[ relative ]">	<!-- VIDEO HEADER -->
+		<iframe width="100%" height="500" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>
+	</div>
 	<?php parallax_hook_header_after(); ?>
 
 	<?php parallax_hook_content_before(); ?>
