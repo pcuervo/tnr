@@ -131,6 +131,7 @@ label{
     margin:25px 25px 25px 25px;
 }
 .single-service{
+    min-height: 600px;
     padding:40px 35px 40px 35px;
     border-right:1px solid #eaeaea;
     border-left:1px solid #eaeaea;
@@ -141,11 +142,11 @@ label{
 li.galcolumn{
     float: right !important;
 }
-.woocommerce .products ul li.galcolumn:nth-child(1), 
+.woocommerce .products ul li.galcolumn:nth-child(1),
 .woocommerce ul.products li.galcolumn:nth-child(1){
     margin-right: 16px !important;
 }
-.woocommerce .products ul li.galcolumn:nth-child(4), 
+.woocommerce .products ul li.galcolumn:nth-child(4),
 .woocommerce ul.products li.galcolumn:nth-child(4){
     margin-right: 0 !important;
 }
@@ -254,7 +255,7 @@ li.galcolumn{
 .timeline-box-wrap .info .entry-content p{
     float:right;
 }
-.timeline-box-wrap .info .entry-meta{ 
+.timeline-box-wrap .info .entry-meta{
     float:right;
 }
 .parallax-slider-whole-wrap{
@@ -374,7 +375,7 @@ a.control_prev span{
     right:3px;
     left:auto;
 }
-.woocommerce div.product form.cart, 
+.woocommerce div.product form.cart,
 .woocommerce div.product p.cart{
     float:right;
 }
@@ -391,19 +392,19 @@ a.control_prev span{
 .woocommerce #reviews #comments h2{
     float:right;
 }
-.woocommerce-page .upsells.products ul li.product, 
-.woocommerce-page .upsells.products ul.products li.product, 
-.woocommerce .upsells.products ul li.product, 
+.woocommerce-page .upsells.products ul li.product,
+.woocommerce-page .upsells.products ul.products li.product,
+.woocommerce .upsells.products ul li.product,
 .woocommerce .upsells.products ul.products li.product,
-.woocommerce .related ul li.product, 
-.woocommerce .related ul.products li.product.woocommerce-page .related ul li.product, 
+.woocommerce .related ul li.product,
+.woocommerce .related ul.products li.product.woocommerce-page .related ul li.product,
 .woocommerce-page .related ul.products li.product{
     float:right;
     margin:0 0 2.992em 3.8%;
 }
 .woocommerce-page .upsells.products ul li.product:nth-child(4n),
-.woocommerce-page .upsells.products ul.products li.product:nth-child(4n), 
-.woocommerce .upsells.products ul li.product:nth-child(4n), 
+.woocommerce-page .upsells.products ul.products li.product:nth-child(4n),
+.woocommerce .upsells.products ul li.product:nth-child(4n),
 .woocommerce .upsells.products ul.products li.product:nth-child(4n){
     margin-left:0;
 }
@@ -442,16 +443,16 @@ a.control_prev span{
     margin:-1em 2em 0 0;
     left: auto;
 }
-.woocommerce #payment #place_order, 
+.woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order{
     float:left;
 }
 .woocommerce .order_details{
     padding-right:0;
 }
-.woocommerce #respond input#submit.loading:after, 
-.woocommerce a.button.loading:after, 
-.woocommerce button.button.loading:after, 
+.woocommerce #respond input#submit.loading:after,
+.woocommerce a.button.loading:after,
+.woocommerce button.button.loading:after,
 .woocommerce input.button.loading:after{
     left:1em;
 }
@@ -460,7 +461,7 @@ a.control_prev span{
     margin-right:-5px;
     -webkit-border-radius:3px 0 0 3px;
     -moz-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px;}
-.woocommerce-account .addresses .title .edit, 
+.woocommerce-account .addresses .title .edit,
 .woocommerce-account ul.digital-downloads li .count{
     float:right;
     margin-right:15px;
@@ -468,22 +469,22 @@ a.control_prev span{
 .woocommerce form .form-row label.inline{
     margin-right:20px;
 }
-.woocommerce #content div.product div.images, 
-.woocommerce div.product div.images, 
-.woocommerce-page #content div.product div.images, 
+.woocommerce #content div.product div.images,
+.woocommerce div.product div.images,
+.woocommerce-page #content div.product div.images,
 .woocommerce-page div.product div.images{
     float: right;
 }
-.woocommerce #content div.product div.summary, 
-.woocommerce div.product div.summary, 
-.woocommerce-page #content div.product div.summary, 
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
 .woocommerce-page div.product div.summary{
     float: left;
 }
 .product{
     float:right;
 }
-.woocommerce ul.products li.product, 
+.woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product{
     border-right:1px solid #eaeaea;
     border-left:1px solid #eaeaea;
@@ -513,9 +514,9 @@ a.control_prev span{
     right:0;
     top:0;
 }
-.woocommerce .woocommerce-error, 
-.woocommerce .woocommerce-info, 
-.woocommerce .woocommerce-message{    
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-message{
     padding: 1em 3.5em 1em 2em!important;
 }
 .woocommerce .woocommerce-error:before{
@@ -530,15 +531,15 @@ a.control_prev span{
 .woocommerce-checkout #payment ul.payment_methods li{
     text-align: right;
 }
-.woocommerce p.stars a.star-1:after, 
-.woocommerce p.stars a.star-2:after, 
-.woocommerce p.stars a.star-3:after, 
-.woocommerce p.stars a.star-4:after, 
+.woocommerce p.stars a.star-1:after,
+.woocommerce p.stars a.star-2:after,
+.woocommerce p.stars a.star-3:after,
+.woocommerce p.stars a.star-4:after,
 .woocommerce p.stars a.star-5:after {
     right:0;
     left:auto;
 }
-.woocommerce-cart .cart-collaterals .cart_totals table td, 
+.woocommerce-cart .cart-collaterals .cart_totals table td,
 .woocommerce-cart .cart-collaterals .cart_totals table th{
     text-align:right;
 }
@@ -566,12 +567,12 @@ a.control_prev span{
 .widget.woocommerce input[type="submit"]{
     left:3px;
 }
-.widget.woocommerce .widget_shopping_cart .cart_list li a.remove, 
+.widget.woocommerce .widget_shopping_cart .cart_list li a.remove,
 .widget.woocommerce.widget_shopping_cart .cart_list li a.remove{
     right:0;
     left: auto;
 }
-.woocommerce .widget_shopping_cart .cart_list li, 
+.woocommerce .widget_shopping_cart .cart_list li,
 .woocommerce.widget_shopping_cart .cart_list li{
     padding-left: 0;
     padding-right: 2em;
@@ -582,12 +583,12 @@ a.control_prev span{
 .cart_totals .shipping{
     text-align:right;
 }
-.widget.woocommerce ul.cart_list li .star-rating, 
+.widget.woocommerce ul.cart_list li .star-rating,
 .widget.woocommerce ul.product_list_widget li .star-rating{
     float:right;
     margin-left:5px;
 }
-.widget.woocommerce ul.cart_list li img, 
+.widget.woocommerce ul.cart_list li img,
 .widget.woocommerce ul.product_list_widget li img{
     float:left;
     margin-right:4px;
@@ -671,7 +672,7 @@ footer.footer ul{
 }
 .post-author i{
     right: 0;
-    left: auto; 
+    left: auto;
 }
 .post-time{
     margin-left:10px;
@@ -851,7 +852,7 @@ footer.footer ul{
         border-right:0;
         padding-right:15px;
     }
-    #primary, 
+    #primary,
     #sidebar-secondary{
         float:right;
     }
@@ -895,7 +896,7 @@ footer.footer ul{
     .sticky-navigation .main-navigation ul li{
         padding-right:7%;
     }
-    .sticky-navigation .main-navigation ul .dropdownmenu, 
+    .sticky-navigation .main-navigation ul .dropdownmenu,
     .dropdownmenu{
         left:0;
     }
@@ -905,17 +906,17 @@ footer.footer ul{
     .menu-align-center #menu-primary > ul{
         margin-right:0;
     }
-    .woocommerce-page .upsells.products ul li.product, 
-    .woocommerce-page .upsells.products ul.products li.product, 
-    .woocommerce .upsells.products ul li.product, 
+    .woocommerce-page .upsells.products ul li.product,
+    .woocommerce-page .upsells.products ul.products li.product,
+    .woocommerce .upsells.products ul li.product,
     .woocommerce .upsells.products ul.products li.product,
     .woocommerce .related ul li.product,
     .woocommerce-page .related ul.products li.product{
         float:right;
     }
-    .woocommerce-page .upsells.products ul li.product:nth-child(even), 
-    .woocommerce-page .upsells.products ul.products li.product:nth-child(even), 
-    .woocommerce .upsells.products ul li.product:nth-child(even), 
+    .woocommerce-page .upsells.products ul li.product:nth-child(even),
+    .woocommerce-page .upsells.products ul.products li.product:nth-child(even),
+    .woocommerce .upsells.products ul li.product:nth-child(even),
     .woocommerce .upsells.products ul.products li.product:nth-child(even),
     .woocommerce .related ul li.product:nth-child(even),
     .woocommerce-page .related ul.products li.product:nth-child(even){

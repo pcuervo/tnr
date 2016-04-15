@@ -25,6 +25,7 @@
 <?php parallax_hook_content_before(); ?>
 <div role="main" id="content" class="content-warp">
 	<?php parallax_hook_content_top(); ?>
+
 	<div class="container">
 		<div id="primary" class="content-area col-md-8 post-list">
 			<main <?php if(have_posts()) echo 'itemscope itemtype="http://schema.org/Blog"'; ?> id="main" class="site-main" role="main">
@@ -52,12 +53,14 @@
 
 				<?php endif; ?>
 
+
 			</main><!-- #main -->
 		</div><!-- #primary -->
 
 		<?php get_sidebar(); ?>
 
 	</div>
+
 	<?php parallax_hook_content_bottom(); ?>
 </div><!-- .content-wrap -->
 <?php parallax_hook_content_after(); ?>
