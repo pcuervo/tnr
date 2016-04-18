@@ -72,7 +72,7 @@
 						<?php parallax_hook_contact_before(); ?>
 						<div class="contact-info" id="contactinfo" role="region" aria-label="<?php esc_html_e('Contact Info','parallax-one'); ?>">
 							<?php parallax_hook_contact_top(); ?>
-							<div class="section-overlay-layer">
+							<div class="section-overlay-layer [ hidden-xs ]">
 								<div class="container">
 
 									<!-- CONTACT INFO -->
@@ -179,7 +179,7 @@
 
 	        </div><!-- .footer-bottom-wrap -->
 
-			<div class="[ text-center font-size--small ] [ margin-top--small ]">Todos los derechos reservados. Sitio creado por <a href="http://pcuervo.com/">Pequeño Cuervo</a>.</div>
+			<div class="[ text-center font-size--small ] [ margin-top--small ]">Todos los derechos reservados.</div>
 
             <?php echo apply_filters("parallax_one_plus_footer_text_filter",'<div class="[ hidden ] powered-by"><a href="https://themeisle.com/themes/parallax-one/" target="_blank" rel="nofollow">Parallax One </a>'.esc_html__('powered by ','parallax-one').'<a class="" href="http://wordpress.org/" target="_blank" rel="nofollow">'.esc_html__('WordPress','parallax-one').'</a></div>');?>
 
