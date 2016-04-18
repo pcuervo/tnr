@@ -16,7 +16,8 @@
 				<?php
 					if( is_active_sidebar( 'footer-area' ) ){
 				?>
-						<div itemscope itemtype="http://schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-1" class="col-md-6 col-sm-6 col-xs-12 widget-box" aria-label="<?php esc_html_e('Widgets Area 1','parallax-one'); ?>">
+						<div itemscope itemtype="http://schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-1" class="col-md-6 col-sm-8 col-xs-12 widget-box" aria-label="<?php esc_html_e('Widgets Area 1','parallax-one'); ?>">
+							<h2 class="[ text-center ] dark-text">Contáctanos</h2><div class="colored-line"></div>
 							<?php
 								dynamic_sidebar( 'footer-area' );
 							?>
@@ -178,6 +179,7 @@
 
 	        </div><!-- .footer-bottom-wrap -->
 
+			<div class="[ text-center font-size--small ] [ margin-top--small ]">Todos los derechos reservados. Sitio creado por <a href="http://pcuervo.com/">Pequeño Cuervo</a>.</div>
 
             <?php echo apply_filters("parallax_one_plus_footer_text_filter",'<div class="[ hidden ] powered-by"><a href="https://themeisle.com/themes/parallax-one/" target="_blank" rel="nofollow">Parallax One </a>'.esc_html__('powered by ','parallax-one').'<a class="" href="http://wordpress.org/" target="_blank" rel="nofollow">'.esc_html__('WordPress','parallax-one').'</a></div>');?>
 
