@@ -148,7 +148,7 @@
 					<div itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="<?php esc_html_e('Primary Menu','parallax-one') ?>" id="menu-primary" class="navbar-collapse collapse">
 						<!-- LOGO ON STICKY NAV BAR -->
 						<div id="site-header-menu" class="site-header-menu">
-							<nav id="site-navigation" class="main-navigation" role="navigation">
+							<nav id="site-navigation" class="[ inline-block middle ] main-navigation" role="navigation">
 							<?php
 								wp_nav_menu(
 									array(
@@ -160,6 +160,7 @@
 								);
 							?>
 							</nav>
+							<a class="[ hidden-xs ][ inline-block middle margin-left--small ][ standard-button button--small ]" href="http://pcuervo.com/tnr/#footer">Contáctanos</a>
 						</div>
                     </div>
 
