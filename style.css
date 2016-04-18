@@ -106,11 +106,17 @@ body {
 	overflow-x: hidden !important;
 	margin: auto !important;
 }
+.relative{ position: relative ;}
 
-.parallax_one_only_customizer {
-	display: none !important;
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
-
 /*---------------------------------------
    1.1 PRE-LOADER
 -----------------------------------------*/
@@ -226,6 +232,22 @@ a:focus {
    2. COMPONENTS
 =========================================
 -----------------------------------------*/
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right; 
+}
+
+.padding-bottom--20 {
+	padding-bottom: 20px;
+}
+
+.bottom--35 {
+	bottom: 35px;
+}
 /*---------------------------------------
    2.1 TYPOGRAPHY
 -----------------------------------------*/
@@ -304,6 +326,27 @@ h1.page-title {
 	font-weight: 600;
 }
 
+.fixed-button{
+	position: fixed;
+	padding: 10px 15px!important;
+	bottom: 10px;
+	z-index: 1000;
+}
+
+.fixed-button span{
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.button--left{
+	left: 15px;
+}
+
+.button-right{
+	right: 15px;
+}
+
+
 /* OTHER TEXTS */
 strong,
 .strong {
@@ -319,7 +362,7 @@ strong,
 }
 
 .transparent-text-dark {
-	color: rgba(49, 49, 49, 0.5);
+	color: rgba(0, 121, 194, 0.5);
 }
 
 .small-text {
@@ -675,7 +718,7 @@ big {
 .grey-bg {
 	border-top: 1px solid #eaebec;
 	border-bottom: 1px solid #eaebec;
-	background: #F7F8FA;
+	background: #EEE;
 }
 
 .dark-bg {
@@ -899,6 +942,17 @@ label{
 	width: 1260px;
 	opacity: 1;
 	overflow: hidden;
+}
+
+.title-video {
+	text-align: center;
+	position: relative;
+	bottom: 100px;
+	color: #fff;
+}
+
+.icon-arrow{
+	width: 30px;
 }
 
 .whole-page-wrap {
@@ -1424,15 +1478,6 @@ header .navbar-brand {
 
 .client-logos li img {
 	max-height: 80px;
-	opacity: 0.6;
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
-}
-
-.client-logos li img:hover {
-	opacity: 1;
-	-webkit-filter: initial;
-	filter: initial;
 }
 
 .clients {
@@ -1449,8 +1494,16 @@ header .navbar-brand {
 	padding-bottom: 50px;
 }
 
+.padding-top--50{
+	padding-top: 50px;
+}
+
+.padding-bottom--50{
+	padding-bottom: 50px;
+}
+
 .services {
-	background-color: #F7F8FA;
+	background-color: #EEE;
 	border-bottom: 1px solid #eaebec;
 }
 
@@ -1458,6 +1511,7 @@ header .navbar-brand {
 }
 
 .single-service {
+	min-height: 715px;
 	padding: 40px 35px 40px 35px;
 	background: #ffffff;
 	border-top: 1px solid #eaeaea;
@@ -1469,6 +1523,10 @@ header .navbar-brand {
 	border-radius: 3px;
 	-webkit-transition: all ease 0.55s;
 	transition: all ease 0.55s;
+}
+
+.single-videos {
+	min-height: auto;
 }
 
 .services-wrap .service-box {
@@ -2242,6 +2300,7 @@ button.control_next.fade-btn {
 	margin: 0;
 	margin-bottom: 5px;
 	color: #FFF;
+	font-size: 16px;
 }
 
 .team-member-wrap {
@@ -2266,7 +2325,7 @@ button.control_next.fade-btn {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,121,194,0.7);
 }
 
 .member-details .social-icons a{
@@ -2428,7 +2487,7 @@ button.control_next.fade-btn {
 -----------------------------------------*/
 .contact-info {
 	text-align: center;
-	background-color: #FFF;
+	background-color: #EEE;
 }
 
 .contact-info .section-overlay-layer {
@@ -5889,7 +5948,9 @@ h2.screen-reader-text {
 		line-height: 28px;
 		top: 0;
 	}
-
+	.fixed-button{
+		display: none; 
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6029,6 +6090,9 @@ h2.screen-reader-text {
 
 	.footer-widget-wrap .widget-box {
 		width: 50%;
+	}
+	.single-service {
+		min-height: auto;
 	}
 
 	.jspVerticalBar {
@@ -6218,6 +6282,9 @@ h2.screen-reader-text {
 	    background-position: center;
 	    background-attachment: initial;
 	    background-size: cover;
+	}
+	.title-video {
+		bottom: 125px;
 	}
 
 }
