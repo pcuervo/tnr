@@ -107,10 +107,10 @@
 														} else {
 															if(!empty($parallax_one_service_box->title)){
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.$parallax_one_service_box->title.'"/>';
-																echo '<a href="'.esc_url($parallax_one_link_services).'"><img src="'.parallax_one_make_protocol_relative_url($parallax_one_logo->image_url).'" alt="'. esc_html__('Aplicación','parallax-one') .'"></a>'; /*ICON APLICACIONES*/
+																echo '<img src="" alt="'. esc_html__('Aplicación','parallax-one') .'">'; /*ICON APLICACIONES*/
 															} else {
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.esc_html__('Featured Image','parallax-one').'"/>';
-																echo '<a href="'.esc_url($parallax_one_link_services).'"><img src="'.parallax_one_make_protocol_relative_url($parallax_one_logo->image_url).'" alt="'. esc_html__('Aplicación','parallax-one') .'"></a>'; /*ICON APLICACIONES*/
+																echo '<img src="" alt="'. esc_html__('Aplicación','parallax-one') .'">'; /*ICON APLICACIONES*/
 															}
 														}
 													}
