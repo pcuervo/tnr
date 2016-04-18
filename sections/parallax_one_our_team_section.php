@@ -35,7 +35,7 @@
 				echo '</div>';
 			?>
 			<div class="[ clearfix ]"></div>
-			<div class="[ services-wrap ]">
+			<div class="[ services-wrap ]" id="buttom-scroll">
 				<a href="http://pcuervo.com/tnr/#footer"><button class="standard-button">Contáctanos</button></a>
 			</div>
 		</div>

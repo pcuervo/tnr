@@ -1,4 +1,4 @@
-jQuery(window).load(function(){ 
+jQuery(window).load(function(){
     callback_menu_align();
     fixFooterBottom();
 });
@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
   ===  SMOOTH SCROLL NAVIGATION   ===
   =================================== */
 jQuery(document).ready(function(){
-  jQuery('#menu-primary a[href*=#]:not([href=#]), a.woocommerce-review-link[href*=#]:not([href=#]), a.post-comments[href*=#]:not([href=#])').bind('click',function () {
+  jQuery("#menu-primary a[href*=\\#]:not([href=\\#]), #buttom-scroll a[href*=\\#]:not([href=\\#]), a.woocommerce-review-link[href*=\\#]:not([href=\\#]), a.post-comments[href*=\\#]:not([href=\\#])").bind('click',function () {
     var headerHeight;
     var hash    = this.hash;
     var idName  = hash.substring(1);    // get id name
@@ -115,8 +115,8 @@ jQuery(document).ready(function(){
       }
     }
   });
-    
-    
+
+
     jQuery("#inpage_scroll_btn").click(function(event) {
         var anchor = jQuery('#inpage_scroll_btn').attr('data-anchor');
         var offset = -60;
@@ -167,7 +167,7 @@ function scrolled() {
             var parallax_one_offset = jQuery(this).offset().top;         // distance between top and our section
             var thisHeight  = jQuery(this).outerHeight();         // section height
             var thisBegin   = parallax_one_offset - headerHeight;                      // where the section begins
-            var thisEnd     = parallax_one_offset + thisHeight - headerHeight;         // where the section ends  
+            var thisEnd     = parallax_one_offset + thisHeight - headerHeight;         // where the section ends
             // if position of the cursor is inside of the this section
             if ( prallax_one_scrollTop >= thisBegin && prallax_one_scrollTop <= thisEnd ) {
                 isInOneSection = 'yes';
@@ -278,7 +278,7 @@ jQuery(window).resize(function() {
         var calcMin = this.options.calcMin;
         var cols = this.options.columns;
         if( this.element.className.indexOf(local_class)<0 ){
-            
+
             $container.children(this.options.selector).each(function(index){
                 if(calcMin == true){
                     var min = Math.min.apply(null,columns_height);
@@ -291,9 +291,9 @@ jQuery(window).resize(function() {
                 if(calcMin == true){
                     columns_height[this_index-1] = $('.'+unique_class +' .' + prefix + '_grid_column_'+this_index).height();
                 }
-                    
+
             });
-            
+
         } else {
             var no_boxes = $container.find(this.options.selector).length;
             var i;
@@ -313,7 +313,7 @@ jQuery(window).resize(function() {
         }
         $container.remove();
     }
-    
+
     ParallaxOneGridPinterest.prototype.make_unique = function () {
         var text = "";
         var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -321,7 +321,7 @@ jQuery(window).resize(function() {
             text += possible.charAt(Math.floor(Math.random() * possible.length));
         return text;
     }
-    
+
     ParallaxOneGridPinterest.prototype.allValuesSame = function(arr) {
         for(var i = 1; i < arr.length; i++){
             if(arr[i] !== arr[0])
@@ -329,7 +329,7 @@ jQuery(window).resize(function() {
         }
         return true;
     }
-    
+
     $.fn.parallaxonegridpinterest = function (options) {
         return this.each(function () {
             var value = '';
@@ -367,10 +367,10 @@ var isMobile = {
 ========= ACCESSIBILITY READY =========
 =======================================*/
 
-// MENU NAVIGATION WITH ARROW KEYS 
+// MENU NAVIGATION WITH ARROW KEYS
 ( function( $ ) {
 
-    
+
   $('.menu-item a').on('keydown', function(e) {
 		// left key
 		if(e.which === 37) {
@@ -430,14 +430,14 @@ var isMobile = {
 			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );
 		});
     }
-    
+
     initMainNavigation( $( '.main-navigation' ) );
-    
+
     masthead = $( '#masthead' );
 	menuToggle       = masthead.find( '#menu-toggle' );
 	siteHeaderMenu   = masthead.find( '#site-header-menu' );
-	siteNavigation   = masthead.find( '#site-navigation' ); 
-    
+	siteNavigation   = masthead.find( '#site-navigation' );
+
     // Enable menuToggle.
 	( function() {
 		// Return early if menuToggle is missing.
@@ -497,12 +497,12 @@ var isMobile = {
 			menuToggle.removeAttr( 'aria-controls' );
 		}
 	}
-    
+
     $( document ).ready( function() {
 		$( window ).on( 'load.parallax-one', onResizeARIA )
 	} );
-    
-    
+
+
 } )( jQuery );
 
 

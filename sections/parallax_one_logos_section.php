@@ -2,7 +2,7 @@
  SECTION: Button header
 ============================== -->
 <?php
-	echo '<div class="container">';
+	echo '<div class="container" id="buttom-scroll">';
 		echo '<div class="[ title-video ]">';
 			echo '<h3>PUERTAS INDUSTRIALES DE ALTO RENDIMIENTO</h3>';
 			echo '<a href="http://pcuervo.com/tnr/#services"><img class="[ icon-arrow ]" src="wp-content/themes/Parallax-One/icons/arrow-down-9.png" alt="Ícono flecha abajo"></a>';

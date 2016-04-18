@@ -155,7 +155,7 @@
 						}
 					?>
 					<div class="[ clearfix ]"></div>
-					<div id="clients" class="[ services-wrap ]">
+					<div class="[ services-wrap ]">
 						<a href="http://www.tnrdoors.com/" target="_blank"><button class="standard-button">Más productos</button></a>
 					</div>
 				</div>
@@ -204,7 +204,7 @@
 	if(!empty($parallax_one_logos)){
 		$parallax_one_logos_decoded = json_decode($parallax_one_logos);
 		parallax_hook_logos_before();
-		echo '<div class="clients white-bg" role="region" aria-label="'.__('Affiliates Logos','parallax-one').'">';
+		echo '<div class="clients white-bg" id="clients" role="region" aria-label="'.__('Affiliates Logos','parallax-one').'">';
 		parallax_hook_logos_top();
 		echo '<div class="container">';
 			echo '<div class="section-header">';
