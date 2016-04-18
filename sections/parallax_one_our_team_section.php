@@ -9,29 +9,31 @@
 				<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
 				<div class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum recusandae, labore accusantium esse nostrum ullam vero nihil dolores nulla praesentium voluptatibus quam earum perspiciatis, excepturi ducimus expedita reprehenderit consectetur!</div>
 			</div>
-			<div id="our_services_wrap" class="services-wrap">
-				<div class="service-box">
-					<div class="single-service single-videos border-bottom-hover">
-						<div class="[ relative ]">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-				<div class="service-box">
-					<div class="single-service single-videos border-bottom-hover">
-						<div class="[ relative ]">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-				<div class="service-box">
-					<div class="single-service single-videos border-bottom-hover">
-						<div class="[ relative ]">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php
+				echo '<div class="services-wrap">';
+					echo '<div class="service-box">';
+					echo '<div class="single-service single-videos border-bottom-hover">';
+						echo '<div class="[ relative ]">';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
+						echo '</div>';
+					echo '</div>';
+					echo '</div>';
+					echo '<div class="service-box">';
+					echo '<div class="single-service single-videos border-bottom-hover">';
+						echo '<div class="[ relative ]">';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
+						echo '</div>';
+					echo '</div>';
+					echo '</div>';
+					echo '<div class="service-box">';
+					echo '<div class="single-service single-videos border-bottom-hover">';
+						echo '<div class="[ relative ]">';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
+						echo '</div>';
+					echo '</div>';
+					echo '</div>';
+				echo '</div>';
+			?>
 			<div class="[ clearfix ]"></div>
 			<div class="[ services-wrap ]">
 				<a href="http://pcuervo.com/tnr/#footer"><button class="standard-button">Contáctanos</button></a>
