@@ -185,6 +185,13 @@
 
 	    </div><!-- container -->
 
+		<a class="[ standard-button fixed-button button--left ]" href="tel:+525553353277">
+			<span class="[ icon-basic-tablet ]"></span>
+		</a>
+		<a class="[ standard-button fixed-button button-right ]" href="http://pcuervo.com/tnr#footer">
+			<span class="[ icon-basic-mail ]"></span>
+		</a>
+
     </footer>
 
   </div>
