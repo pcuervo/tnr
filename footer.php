@@ -186,11 +186,14 @@
 	    </div><!-- container -->
 
 		<a class="[ standard-button fixed-button button--left ]" href="tel:+525553353277">
-			<span class="[ icon-basic-tablet ]"></span>
+			<img class="[ width--25 ]" src="wp-content/themes/Parallax-One/icons/phone-5.png" alt="ícono teléfono">
 		</a>
-		<a class="[ standard-button fixed-button button-right ]" href="http://pcuervo.com/tnr#footer">
-			<span class="[ icon-basic-mail ]"></span>
-		</a>
+		<div id="buttom-scroll">
+			<a class="[ standard-button fixed-button button-right ]" href="http://pcuervo.com/tnr/#footer">
+				<img class="[ width--25 ]" src="wp-content/themes/Parallax-One/icons/email-2.png" alt="ícono email">
+			</a>
+		</div>
+
 
     </footer>
 

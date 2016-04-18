@@ -12,7 +12,15 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 	</header>
 	<!-- /END HOME / HEADER  -->
 	<div class="[ relative ]">	<!-- VIDEO HEADER -->
-		<iframe width="100%" height="500" src="https://www.youtube.com/embed/XMPPpV7sHRE?autoplay=1&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<div class="[ container width--100 ][ title-video ]">
+			<p>PUERTAS INDUSTRIALES DE ALTO RENDIMIENTO</p>
+		</div>
+		<div class="[ hidden-sm ]">
+			<img class="[ width--100 ]" src="wp-content/themes/Parallax-One/images/header-bg.jpg" alt="imagen tnr">
+		</div>
+		<div class="[ hidden-xs ]">
+			<iframe width="100%" height="700" src="https://www.youtube.com/embed/XMPPpV7sHRE?autoplay=1&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
 	</div>
 
 	<?php parallax_hook_header_after(); ?>
