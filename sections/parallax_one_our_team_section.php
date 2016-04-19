@@ -97,7 +97,7 @@
 							$parallax_one_team_decoded = json_decode($parallax_one_team_content);
 							foreach($parallax_one_team_decoded as $parallax_one_team_member){
 								if( !empty($parallax_one_team_member->image_url) ||  !empty($parallax_one_team_member->title) || !empty($parallax_one_team_member->subtitle)){?>
-									<div class="col-md-3 team-member-box">
+									<div class="col-md-3 team-member-box [ no-padding ]">
 										<div class="team-member border-bottom-hover">
 											<div class="member-pic">
 												<?php
