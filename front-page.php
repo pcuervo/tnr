@@ -20,7 +20,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		</div>
 		<div class="[ hidden-xs ][ content-video ]">
 			<!-- <iframe width="100%" height="700" src="https://www.youtube.com/embed/XMPPpV7sHRE?autoplay=1&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-			<video class="[ width--100 ]" autoplay loop >
+			<video class="[ width--100 ]" autoplay loop muted>
 				<source src="wp-content/themes/Parallax-One/video/introducing-tnr_doors.mp4" type="video/mp4">
 			</video>
 		</div>
