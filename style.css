@@ -1580,7 +1580,7 @@ header .navbar-brand {
 }
 
 .single-service {
-	min-height: 715px;
+	height: 715px;
 	padding: 40px 35px 40px 35px;
 	background: #ffffff;
 	border-top: 1px solid #eaeaea;
@@ -1595,7 +1595,7 @@ header .navbar-brand {
 }
 
 .single-videos {
-	min-height: auto;
+	height: auto;
 }
 
 .services-wrap .service-box {
@@ -6780,6 +6780,9 @@ h2.screen-reader-text {
 	}
 	.content-video {
 		height: 440px;
+	}
+	.single-service {
+		height: 790px;
 	}
 }
 @media (max-width: 480px) {
