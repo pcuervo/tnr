@@ -117,6 +117,16 @@ body {
   width: 100%;
   border: 0;
 }
+
+/*---------------------------------------
+   Video
+-----------------------------------------*/
+
+.content-video {
+	height: 685px;
+	overflow: hidden;
+}
+
 /*---------------------------------------
    1.1 PRE-LOADER
 -----------------------------------------*/
@@ -5551,6 +5561,9 @@ h2.screen-reader-text {
 	body {
 		font-size: 15px;
 		line-height: 26px;
+	}	
+	.content-video {
+		height: 550px;
 	}
 }
 
@@ -6764,6 +6777,9 @@ h2.screen-reader-text {
 @media (max-width: 992px) {
 	.contact-form.commentsblock textarea {
 		width: 100%;
+	}
+	.content-video {
+		height: 440px;
 	}
 }
 @media (max-width: 480px) {
