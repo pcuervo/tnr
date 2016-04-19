@@ -20,7 +20,7 @@
 	if( !empty($parallax_one_happy_customers_title) || !empty($parallax_one_happy_customers_subtitle) || !parallax_one_general_repeater_is_empty($parallax_one_testimonials_content) ){
 ?>
 	<?php parallax_hook_tetimonials_before(); ?>
-	<section class="testimonials" id="customers" role="region" aria-label="<?php esc_html_e('Testimonials','parallax-one') ?>">
+	<section class="testimonials [ contact-info ]" id="customers" role="region" aria-label="<?php esc_html_e('Testimonials','parallax-one') ?>">
 		<?php parallax_hook_tetimonials_top(); ?>
 		<div class="section-overlay-layer">
 			<div class="container">
