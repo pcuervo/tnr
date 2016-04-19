@@ -241,13 +241,50 @@ a:focus {
 	float: right; 
 }
 
+.no-padding {
+	padding: 0px;
+}
+
 .padding-bottom--20 {
 	padding-bottom: 20px;
 }
 
-.bottom--35 {
-	bottom: 35px;
+.bottom--20 {
+	bottom: 20px;
 }
+
+.relative {
+	position: relative;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.margin-left--small {
+	margin-left: 20px;
+}
+.margin-top--small {
+	margin-top: 20px;
+}
+
+.width--100 {
+	width: 100%;
+}
+
+.width--25 {
+	width: 25px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
 /*---------------------------------------
    2.1 TYPOGRAPHY
 -----------------------------------------*/
@@ -321,9 +358,17 @@ h1.page-title {
 	color: #000;
 }
 
+.font-size--small {
+	font-size: 12px;
+}
+
 /* BUTTONS */
 .standard-button {
 	font-weight: 600;
+}
+
+.button--small {
+	padding: 5px 10px!important;
 }
 
 .fixed-button{
@@ -362,7 +407,7 @@ strong,
 }
 
 .transparent-text-dark {
-	color: rgba(0, 121, 194, 0.5);
+	color: rgba(0, 121, 194, 0.8);
 }
 
 .small-text {
@@ -945,14 +990,23 @@ label{
 }
 
 .title-video {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 1.1;
 	text-align: center;
-	position: relative;
-	bottom: 100px;
+	position: absolute;
+	top: 20px;
 	color: #fff;
 }
 
+.arrow-video {
+	text-align: center;
+	position: relative;
+	top: -60px;
+}
+
 .icon-arrow{
-	width: 30px;
+	width: 45px;
 }
 
 .whole-page-wrap {
@@ -1492,6 +1546,11 @@ header .navbar-brand {
 	text-align: center;
 	position: relative;
 	padding-bottom: 50px;
+}
+
+.img-aplicacion {
+	width: 55px;
+	padding: 0px 5px;
 }
 
 .padding-top--50{
@@ -2226,15 +2285,15 @@ button.control_next.fade-btn {
 }
 
 .team-member {
-	margin-bottom: 25px;
+	margin-bottom: 0px;
 	position: relative;
 	overflow: hidden;
 	border: 5px solid #ffffff;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	border: 1px solid #e4e7e7;
-	border-bottom: 4px solid #e4e7e7;
+	border: 0px solid #e4e7e7;
+	border-bottom: 4px solid #fff;
 	min-height: 100px;
 }
 
@@ -4465,6 +4524,10 @@ footer.footer .team-member-box .team-member {
 	max-width: 350px;
 }
 
+.social-icons [class*=" icon-"]:before, [class^=icon-]:before {
+	font-size: 25px;
+}
+
 /*---------------------------------------
    4. DEFAULT COLORS
 -----------------------------------------*/
@@ -5823,6 +5886,9 @@ h2.screen-reader-text {
 }
 
 @media (min-width: 768px) {
+	.hidden-sm {
+		display: none;
+	}
 	.navbar>.container .navbar-brand,
 	.navbar>.container-fluid .navbar-brand {
     	margin-left: 0;
@@ -6284,12 +6350,11 @@ h2.screen-reader-text {
 	    background-size: cover;
 	}
 	.title-video {
-		bottom: 125px;
+		font-size: 26px;
 	}
-
-}
-
-@media (max-width: 680px) {
+	.hidden-xs {
+		display: none;
+	}
 	.single-feature {
 		width: auto;
 		float: none;
@@ -6646,8 +6711,11 @@ h2.screen-reader-text {
 -----------------------------------------*/
 .pirate-forms-submit-button{
     clear: both;
-    margin-left: 15px;
     float: left;
+}
+
+.pirate-forms-contact-widget h3 {
+	display: none;
 }
 
 /*---------------------------------------
