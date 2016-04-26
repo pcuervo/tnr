@@ -1,48 +1,4 @@
 <!-- =========================
- SECTION: Videos
-============================== -->
-<section class="services" id="videos" role="region" aria-label="">
-	<div class="section-overlay-layer">
-		<div class="container">
-			<!-- SECTION HEADER -->
-			<div class="section-header">
-				<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
-				<div class="sub-heading">Nuestras puertas en acción</div>
-			</div>
-			<?php
-				echo '<div class="services-wrap">';
-					echo '<div class="service-box">';
-					echo '<div class="single-service single-videos border-bottom-hover">';
-						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
-						echo '</div>';
-					echo '</div>';
-					echo '</div>';
-					echo '<div class="service-box">';
-					echo '<div class="single-service single-videos border-bottom-hover">';
-						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
-						echo '</div>';
-					echo '</div>';
-					echo '</div>';
-					echo '<div class="service-box">';
-					echo '<div class="single-service single-videos border-bottom-hover">';
-						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
-						echo '</div>';
-					echo '</div>';
-					echo '</div>';
-				echo '</div>';
-			?>
-			<div class="[ clearfix ]"></div>
-			<div class="[ services-wrap ]" id="buttom-scroll">
-				<a href="http://pcuervo.com/tnr/#footer"><button class="standard-button">Contáctanos</button></a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- =========================
  SECTION: TEAM
 ============================== -->
 <?php
@@ -62,7 +18,7 @@
 	if(!empty($parallax_one_our_team_title) || !empty($parallax_one_our_team_subtitle) || !parallax_one_general_repeater_is_empty($parallax_one_team_content) ){
 ?>
 		<?php parallax_hook_team_before(); ?>
-		<section class="team" id="team" role="region" aria-label="<?php esc_html_e('Team','parallax-one') ?>">
+		<section class="[ padding-bottom--80 ]" id="team" role="region" aria-label="<?php esc_html_e('Team','parallax-one') ?>">
 			<?php parallax_hook_team_top(); ?>
 			<div class="section-overlay-layer">
 				<div class="container">
@@ -197,3 +153,47 @@
 		}
 	}
 ?>
+
+<!-- =========================
+ SECTION: Videos
+============================== -->
+<section class="[ services ]" id="videos" role="region" aria-label="">
+	<div class="section-overlay-layer">
+		<div class="container">
+			<!-- SECTION HEADER -->
+			<div class="section-header">
+				<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
+				<div class="sub-heading">Nuestras puertas en acción</div>
+			</div>
+			<?php
+				echo '<div class="services-wrap">';
+					echo '<div class="service-box">';
+					echo '<div class="single-service single-videos border-bottom-hover">';
+						echo '<div class="[ relative ]">';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
+						echo '</div>';
+					echo '</div>';
+					echo '</div>';
+					echo '<div class="service-box">';
+					echo '<div class="single-service single-videos border-bottom-hover">';
+						echo '<div class="[ relative ]">';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
+						echo '</div>';
+					echo '</div>';
+					echo '</div>';
+					echo '<div class="service-box">';
+					echo '<div class="single-service single-videos border-bottom-hover">';
+						echo '<div class="[ relative ]">';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/XMPPpV7sHRE" frameborder="0" allowfullscreen></iframe>';
+						echo '</div>';
+					echo '</div>';
+					echo '</div>';
+				echo '</div>';
+			?>
+			<div class="[ clearfix ]"></div>
+			<div class="[ services-wrap ]" id="buttom-scroll">
+				<a href="http://pcuervo.com/tnr/#footer"><button class="standard-button">Contáctanos</button></a>
+			</div>
+		</div>
+	</div>
+</section>

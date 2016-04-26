@@ -38,7 +38,8 @@
 								if( empty($parallax_one_button_link) ){
 									echo '<button class="btn btn-primary standard-button paralax_one_only_customizer" type="button" data-toggle="modal" data-target="#stamp-modal"><span class="screen-reader-text">'.esc_html__('Ribbon button label:','parallax-one').$parallax_one_button_text.'</span>'.$parallax_one_button_text.'</button>';
 								} else {
-									echo '<button onclick="window.location=\''.esc_url($parallax_one_button_link).'\'" class="btn btn-primary standard-button" type="button" data-toggle="modal" data-target="#stamp-modal"><span class="screen-reader-text">'.esc_html__('Ribbon button label:','parallax-one').$parallax_one_button_text.'</span>'.esc_attr($parallax_one_button_text).'</button>';
+									echo '<button onclick="window.location=\''.esc_url($parallax_one_button_link).'\'" class="btn btn-primary standard-button [ margin--sides inline-block ]" type="button" data-toggle="modal" data-target="#stamp-modal"><span class="screen-reader-text">'.esc_html__('Ribbon button label:','parallax-one').$parallax_one_button_text.'</span>'.esc_attr($parallax_one_button_text).'</button>';
+									echo '<div class=" [ margin--sides inline-block ]" id="buttom-scroll"><a href="http://pcuervo.com/tnr/#footer" class="[ relative top-2 ]"><button class="standard-button">Contáctanos</button></a></div>';
 								}
 							} elseif ( isset( $wp_customize )   ) {
 								echo '<button class="btn btn-primary standard-button paralax_one_only_customizer" type="button" data-toggle="modal" data-target="#stamp-modal"></button>';

@@ -19,7 +19,7 @@
 	if(!empty($parallax_one_our_services_title) || !empty($parallax_one_our_services_subtitle) || !parallax_one_general_repeater_is_empty($parallax_one_services)){
 ?>
 		<?php parallax_hook_services_before(); ?>
-		<section class="services" id="services" role="region" aria-label="<?php esc_html_e('Services','parallax-one') ?>">
+		<section class=" [ services ]" id="services" role="region" aria-label="<?php esc_html_e('Services','parallax-one') ?>">
 			<?php parallax_hook_services_top(); ?>
 			<div class="section-overlay-layer">
 				<div class="container">
@@ -108,12 +108,11 @@
 															if(!empty($parallax_one_service_box->title)){
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.$parallax_one_service_box->title.'"/>';
 																echo '<div class="clearfix"></div>';
-																echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; /*ICON APLICACIONES*/
-																echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/auto1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; /*ICON APLICACIONES*/
+																/*echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; ICON APLICACIONES*/
 															} else {
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.esc_html__('Featured Image','parallax-one').'"/>';
 																echo '<div class="clearfix"></div>';
-																echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; /*ICON APLICACIONES*/
+																/*echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; ICON APLICACIONES*/
 															}
 														}
 													}
@@ -182,53 +181,3 @@
 		}
 	}
 ?>
-
-<!-- =========================
- SECTION: CLIENTS LOGOs
-============================== -->
-<?php
-	$parallax_one_logos = get_theme_mod('parallax_one_logos_content',
-		json_encode(
-			array(
-				array("image_url" => parallax_get_file('/images/companies/1.png') ,"link" => "#" ),
-				array("image_url" => parallax_get_file('/images/companies/2.png') ,"link" => "#" ),
-				array("image_url" => parallax_get_file('/images/companies/3.png') ,"link" => "#" ),
-				array("image_url" => parallax_get_file('/images/companies/4.png') ,"link" => "#" ),
-				array("image_url" => parallax_get_file('/images/companies/5.png') ,"link" => "#" )
-			)
-		)
-	);
-	if(!empty($parallax_one_logos)){
-		$parallax_one_logos_decoded = json_decode($parallax_one_logos);
-		parallax_hook_logos_before();
-		echo '<div class="clients white-bg" id="clients" role="region" aria-label="'.__('Affiliates Logos','parallax-one').'">';
-		parallax_hook_logos_top();
-		echo '<div class="container">';
-			echo '<div class="section-header">';
-				echo '<h2 class="dark-text">Aplicaciones</h2><div class="colored-line"></div>';
-			echo '</div>';
-			echo '<ul class="client-logos padding-bottom--50">';
-			foreach($parallax_one_logos_decoded as $parallax_one_logo){
-				if(!empty($parallax_one_logo->image_url)){
-
-					echo '<li>';
-					if(!empty($parallax_one_logo->link)){
-						echo '<a href="'.$parallax_one_logo->link.'" title="">';
-							echo '<img src="'.parallax_one_make_protocol_relative_url($parallax_one_logo->image_url).'" alt="'. esc_html__('Logo','parallax-one') .'">';
-						echo '</a>';
-					} else {
-						echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_logo->image_url)).'" alt="'.esc_html__('Logo','parallax-one').'">';
-					}
-					echo '</li>';
-
-
-				}
-			}
-			echo '</ul>';
-		echo '</div>';
-		parallax_hook_logos_bottom();
-		echo '</div>';
-		parallax_hook_logos_after();
-	}
-?>
-
