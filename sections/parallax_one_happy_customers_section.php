@@ -140,9 +140,8 @@
 			</div>
 		</div>
 		<?php parallax_hook_tetimonials_bottom(); ?>
-		<div class="section-header">
-			<h3 class="dark-text">Certificaciones</h2><div class="colored-line"></div>
-		</div>
+		<!-- CERTIFICACIONES -->
+		<h3 class="dark-text">Certificaciones</h2><div class="colored-line"></div>
 		<img src="//pcuervo.com/tnr/wp-content/uploads/2016/04/gold-corp-300x180.png" alt="certificación de tnr">
 		<img src="//pcuervo.com/tnr/wp-content/uploads/2016/04/good-year-300x180.png" alt="certificación de tnr">
 		<img src="//pcuervo.com/tnr/wp-content/uploads/2016/04/chrysler-1-300x180.png" alt="certificación de tnr">
