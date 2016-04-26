@@ -155,10 +155,6 @@
 							echo '</div>';
 						}
 					?>
-					<div class="[ clearfix ]"></div>
-					<div class="[ services-wrap ]">
-						<a href="http://www.tnrdoors.com/" target="_blank"><button class="standard-button">Más productos</button></a>
-					</div>
 				</div>
 			</div>
 			<?php parallax_hook_services_bottom(); ?>

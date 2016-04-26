@@ -7,7 +7,7 @@
 			<!-- SECTION HEADER -->
 			<div class="section-header">
 				<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
-				<div class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum recusandae, labore accusantium esse nostrum ullam vero nihil dolores nulla praesentium voluptatibus quam earum perspiciatis, excepturi ducimus expedita reprehenderit consectetur!</div>
+				<div class="sub-heading">Nuestras puertas en acción</div>
 			</div>
 			<?php
 				echo '<div class="services-wrap">';
