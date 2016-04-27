@@ -128,6 +128,27 @@ body {
 }
 
 /*---------------------------------------
+   1200PX SCREENS
+-----------------------------------------*/
+@media (max-width: 1500px) {
+	.position-video {
+		position: absolute;
+		bottom: 0px
+	}
+}
+
+/*---------------------------------------
+   1200PX SCREENS
+-----------------------------------------*/
+@media (min-width: 1500px) {
+	.position-video {
+		position: relative;
+		bottom: 170px
+	}
+}
+
+
+/*---------------------------------------
    1.1 PRE-LOADER
 -----------------------------------------*/
 .preloader {
@@ -259,10 +280,16 @@ a:focus {
 	padding-bottom: 20px;
 }
 
+.padding-bottom--80 {
+	padding-bottom: 80px;
+}
+
 .bottom--20 {
 	bottom: 20px;
 }
-
+.top-2 {
+	top: 2px;
+}
 .relative {
 	position: relative;
 }
@@ -281,6 +308,13 @@ a:focus {
 .margin-top--small {
 	margin-top: 20px;
 }
+.margin--sides {
+	margin:10px;
+}
+
+.inline-block {
+	display: inline-blok; 
+}
 
 .width--100 {
 	width: 100%;
@@ -294,6 +328,23 @@ a:focus {
 	text-align: center;
 }
 
+
+.center-full {
+	position: absolute;
+	top: 50%; left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+
+.bg-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.rectangle {
+	height: 450px;
+}
 
 /*---------------------------------------
    2.1 TYPOGRAPHY
@@ -1000,6 +1051,7 @@ label{
 }
 
 .title-video {
+	padding-top: 150px;
 	font-size: 35px;
 	font-weight: bold;
 	line-height: 1.1;
@@ -1541,7 +1593,7 @@ header .navbar-brand {
 }
 
 .client-logos li img {
-	max-height: 80px;
+	max-height: 100px;
 }
 
 .clients {
@@ -1580,7 +1632,7 @@ header .navbar-brand {
 }
 
 .single-service {
-	height: 715px;
+	height: 630px;
 	padding: 40px 35px 40px 35px;
 	background: #ffffff;
 	border-top: 1px solid #eaeaea;
@@ -1595,7 +1647,7 @@ header .navbar-brand {
 }
 
 .single-videos {
-	height: auto;
+	height: auto!important;
 }
 
 .services-wrap .service-box {
@@ -2435,7 +2487,7 @@ button.control_next.fade-btn {
     height: 81px;
     border: 3px solid #FFF;
     background-clip: padding-box;
-    box-shadow: 0px 0px 0px 1px #008ED6;
+    box-shadow: 0px 0px 0px 1px #CCC;
     background-color: #FAFAFA;
 }
 
@@ -2475,6 +2527,7 @@ button.control_next.fade-btn {
 }
 
 .testimonials-box .feedback {
+  height: 150px;
   padding: 40px 0 40px 0;
   margin: 40px 0 30px 0;
   background: #ffffff;
@@ -2529,7 +2582,7 @@ button.control_next.fade-btn {
 .call-to-action .section-overlay-layer {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: rgba(0, 5, 8, 0.80);
+	background: rgba(0, 5, 8, 0.6);
 }
 
 .call-to-action h2 {
@@ -2586,6 +2639,7 @@ button.control_next.fade-btn {
 }
 
 .contact-info .contact-links a {
+	font-size: 20px;
 	padding-top: 65px;
 	padding-bottom: 0;
 }
@@ -4538,6 +4592,10 @@ footer.footer .team-member-box .team-member {
 	font-size: 25px;
 }
 
+.contact-link-box .social-icons [class*=" icon-"]:before, [class^=icon-]:before {
+	font-size: 40px;
+}
+
 /*---------------------------------------
    4. DEFAULT COLORS
 -----------------------------------------*/
@@ -4697,8 +4755,8 @@ a:hover {
 
 .posted-in i {
 	font-size: 16px;
-	position: absolute;
-	left: 0;
+	position: relative;
+	left: -10px;
 	top: 1px;
 }
 
@@ -4829,20 +4887,20 @@ a:hover {
 
 .post-author i {
 	font-size: 13px;
-	position: absolute;
-	left: 0;
+	position: relative;
+	left: -10px;
 	top: 0;
 }
 .post-time i {
 	font-size: 13px;
-	position: absolute;
-	left: 0;
+	position: relative;
+	left: -10px;
 	top: 1px;
 }
 .post-comments i {
 	font-size: 13px;
-	position: absolute;
-	left: 0;
+	position: relative;
+	left: -10px;
 	top: 1px;
 	color: #313131;
 }
@@ -5520,6 +5578,16 @@ h2.screen-reader-text {
 	z-index: 1;
 }
 
+/* --------------------------------------
+=========================================
+   5.4 Blog
+=========================================
+-----------------------------------------*/
+
+.post-comments, 
+.comments-area {
+	display:none;
+}
 
 /* --------------------------------------
 =========================================
@@ -5634,8 +5702,7 @@ h2.screen-reader-text {
 	}
 
 	.client-logos li img {
-		max-width: 80px;
-		opacity: 0.6;
+		max-width: 90px;
 	}
 
 	.pull-left,
@@ -5899,6 +5966,9 @@ h2.screen-reader-text {
 }
 
 @media (min-width: 768px) {
+	#services .parallax_one_grid_last .service-box:last-of-type .single-service {
+		padding-top: 155px;
+	}
 	.hidden-sm {
 		display: none;
 	}
@@ -6171,7 +6241,7 @@ h2.screen-reader-text {
 		width: 50%;
 	}
 	.single-service {
-		min-height: auto;
+		height: auto!important;
 	}
 
 	.jspVerticalBar {
@@ -6782,7 +6852,7 @@ h2.screen-reader-text {
 		height: 440px;
 	}
 	.single-service {
-		height: 790px;
+		height: 715px;
 	}
 }
 @media (max-width: 480px) {
