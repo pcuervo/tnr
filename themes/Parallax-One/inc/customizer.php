@@ -352,12 +352,12 @@ function parallax_one_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'parallax_one_services_content', array(
 		'sanitize_callback' => 'parallax_one_sanitize_repeater',
 		'default' => json_encode(
-							array(
-									array('choice'=>'parallax_icon','icon_value' => 'icon-basic-webpage-multiple','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one')),
-									array('choice'=>'parallax_icon','icon_value' => 'icon-ecommerce-graph3','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one')),
-									array('choice'=>'parallax_icon','icon_value' => 'icon-basic-geolocalize-05','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one'))
-							)
-						)
+			array(
+				array('choice'=>'parallax_icon','icon_value' => 'icon-basic-webpage-multiple','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one')),
+				array('choice'=>'parallax_icon','icon_value' => 'icon-ecommerce-graph3','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one')),
+				array('choice'=>'parallax_icon','icon_value' => 'icon-basic-geolocalize-05','title' => esc_html__('Lorem Ipsum','parallax-one'),'text' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.','parallax-one'))
+			)
+		)
 	));
 	$wp_customize->add_control( new Parallax_One_General_Repeater( $wp_customize, 'parallax_one_services_content', array(
 		'label'   => esc_html__('Add new service box','parallax-one'),
@@ -368,7 +368,8 @@ function parallax_one_customize_register( $wp_customize ) {
         'parallax_icon_control' => true,
 		'parallax_title_control' => true,
         'parallax_text_control' => true,
-		'parallax_link_control' => true
+		'parallax_link_control' => true,
+		'parallax_application_control' => true
 	) ) );
 	/********************************************************/
 	/******************** ABOUT OPTIONS  ********************/
@@ -476,13 +477,13 @@ function parallax_one_customize_register( $wp_customize ) {
 						)
 	));
 	$wp_customize->add_control( new Parallax_One_General_Repeater( $wp_customize, 'parallax_one_team_content', array(
-		'label'															=> esc_html__('Add new team member','parallax-one'),
-		'section'														=> 'parallax_one_team_section',
-		'active_callback' 									=> 'parallax_one_show_on_front',
-		'priority' 													=> 3,
-    'parallax_image_control' 						=> true,
-		'parallax_title_control' 						=> true,
-		'parallax_subtitle_control' 				=> true,
+		'label'								=> esc_html__('Add new team member','parallax-one'),
+		'section'							=> 'parallax_one_team_section',
+		'active_callback' 					=> 'parallax_one_show_on_front',
+		'priority' 							=> 3,
+		'parallax_image_control' 			=> true,
+		'parallax_title_control' 			=> true,
+		'parallax_subtitle_control' 		=> true,
 		'parallax_socials_repeater_control' => true
 	) ) );
 

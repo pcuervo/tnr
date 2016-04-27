@@ -188,6 +188,26 @@ jQuery(document).ready(function(){
         parallax_one_refresh_general_control_values();
         return false;
     });
+
+
+    jQuery('#customize-theme-controls').on('change','.parallax_one_application_choice',function() {
+        if(jQuery(this).val() == 'parallax_image'){
+            jQuery(this).parent().parent().find('.parallax_one_general_control_icon').hide();
+            jQuery(this).parent().parent().find('.parallax_one_application_control').show();
+        }
+        if(jQuery(this).val() == 'parallax_icon'){
+            jQuery(this).parent().parent().find('.parallax_one_general_control_icon').show();
+            jQuery(this).parent().parent().find('.parallax_one_application_control').hide();
+        }
+        if(jQuery(this).val() == 'parallax_none'){
+            jQuery(this).parent().parent().find('.parallax_one_general_control_icon').hide();
+            jQuery(this).parent().parent().find('.parallax_one_application_control').hide();
+        }
+
+        parallax_one_refresh_general_control_values();
+        return false;
+    });
+
     media_upload('.custom_media_button_parallax_one');
     jQuery(".custom_media_url").live('change',function(){
         parallax_one_refresh_general_control_values();
@@ -215,7 +235,7 @@ jQuery(document).ready(function(){
 	if( typeof th != 'undefined' ) {
 		/* Clone the first box*/
 		var field = th.find(".parallax_one_general_control_repeater_container:first").clone();
-		
+
 		if( typeof field != 'undefined' ){
 			/*Set the default value for choice between image and icon to icon*/
         	field.find(".parallax_one_image_choice").val('parallax_icon');
@@ -245,7 +265,7 @@ jQuery(document).ready(function(){
 				onSelected: function(selectedData){
 				}
 			});
-			
+
 			/*Remove value from text field*/
 			field.find(".parallax_one_text_control").val('');
 
@@ -254,7 +274,7 @@ jQuery(document).ready(function(){
 
 			/*Set box id*/
 			field.find(".parallax_one_box_id").val(id);
-			
+
 			/*Remove value from media field*/
 			field.find(".custom_media_url").val('');
 
