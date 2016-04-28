@@ -187,7 +187,7 @@
 
 	    </div><!-- container -->
 
-		<a class="[ standard-button fixed-button button--left ]" href="tel:+525553353277">
+		<a class="[ standard-button fixed-button button--left ]" href="tel:+525559391351">
 			<img class="[ width--25 ]" src="wp-content/themes/Parallax-One/icons/phone-5.png" alt="ícono teléfono">
 		</a>
 		<div id="buttom-scroll">
