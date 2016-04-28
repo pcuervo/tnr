@@ -143,9 +143,9 @@
 		<!-- CERTIFICACIONES -->
 		<div class="[ padding-bottom--20 padding-top--20 ]">
 			<h3 class="dark-text">Certificaciones</h2><div class="colored-line"></div>
-			<img class="[ margin--10 ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/dasma-1.png" alt="certificación de tnr">
-			<img class="[ margin--10 ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/qas.png" alt="certificación de tnr">
-			<img class="[ margin--10 ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/ida-1.png" alt="certificación de tnr">
+			<img class="[ margin--10 ]" src="http://tnrindustrial.com/wp-content/uploads/2016/04/dasma-1.png" alt="certificación de tnr">
+			<img class="[ margin--10 ]" src="http://tnrindustrial.com/wp-content/uploads/2016/04/qas.png" alt="certificación de tnr">
+			<img class="[ margin--10 ]" src="http://tnrindustrial.com/wp-content/uploads/2016/04/ida-1.png" alt="certificación de tnr">
 		</div>
 
 	</section><!-- customers -->
