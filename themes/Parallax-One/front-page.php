@@ -13,15 +13,14 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 	<!-- /END HOME / HEADER  -->
 	<div class="[ relative ]">	<!-- VIDEO HEADER -->
 		<div class="[ hidden-sm ]">
-			<div class="[ bg-image rectangle ]" style="background-image: url('wp-content/themes/Parallax-One/images/header-bg.jpg');" alt="imagen tnr">
+			<div class="[ bg-image rectangle ]" style="background-image: url('http://tnrindustrial.com/wp-content/uploads/2016/04/header-bg.png');" alt="imagen tnr">
 				<div class="[ container width--100 ][ title-video ]">
 					<p>PUERTAS INDUSTRIALES DE ALTO RENDIMIENTO</p>
 				</div>
 			</div>
 		</div>
 		<div class="[ hidden-xs ][ content-video ]">
-			<!-- <iframe width="100%" height="700" src="https://www.youtube.com/embed/XMPPpV7sHRE?autoplay=1&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-			<video class="[ width--100 ][ position-video ]" autoplay loop muted>
+			<video class="[ hidden-xs ][ width--100 ][ position-video ]" autoplay loop muted>
 				<source src="wp-content/themes/Parallax-One/video/tnr_approved.mp4" type="video/mp4">
 			</video>
 		</div>
