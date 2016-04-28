@@ -8,7 +8,7 @@
 			// 	echo '<p>PUERTAS INDUSTRIALES DE ALTO RENDIMIENTO</p>';
 			// echo '</div>';
 			echo '<div class="[ arrow-video ]">';
-				echo '<a href="http://tnrindustrial.com/#services"><img class="[ icon-arrow ]" src="wp-content/themes/Parallax-One/icons/arrow-down-9.png" alt="Ícono flecha abajo"></a>';
+				echo '<a href="http://tnrindustrial.com/#clients"><img class="[ icon-arrow ]" src="wp-content/themes/Parallax-One/icons/arrow-down-9.png" alt="Ícono flecha abajo"></a>';
 			echo '</div>';
 			echo '<div class="[ text-center ][ relative bottom--20 ]">';
 				echo '<h3 class="[ inline-block ][ colored-text ][ padding-bottom--20 ]">Solicita una cotización</h3>';
