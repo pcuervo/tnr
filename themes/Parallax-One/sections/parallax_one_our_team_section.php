@@ -177,7 +177,7 @@
 					echo '<div class="service-box">';
 					echo '<div class="single-service single-videos border-bottom-hover">';
 						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/tTCbbNrzzbI" frameborder="0" allowfullscreen></iframe>';
+							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/su1FfLp1ysk" frameborder="0" allowfullscreen></iframe>';
 						echo '</div>';
 					echo '</div>';
 					echo '</div>';
@@ -192,7 +192,7 @@
 			?>
 			<div class="[ clearfix ]"></div>
 			<div class="[ services-wrap ]" id="buttom-scroll">
-				<a href="http://pcuervo.com/tnr/#footer"><button class="standard-button">Contáctanos</button></a>
+				<a href="http://tnrindustrial.com/#footer"><button class="standard-button">Contáctanos</button></a>
 			</div>
 		</div>
 	</div>

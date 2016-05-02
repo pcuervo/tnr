@@ -108,11 +108,11 @@
 															if(!empty($parallax_one_service_box->title)){
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.$parallax_one_service_box->title.'"/>';
 																echo '<div class="clearfix"></div>';
-																/*echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; ICON APLICACIONES*/
+																/*echo '<img class="[ img-aplicacion ]" src="//tnrindustrial.com/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; ICON APLICACIONES*/
 															} else {
 																echo '<img src="'.parallax_one_make_protocol_relative_url(esc_url($parallax_one_service_box->image_url)).'" alt="'.esc_html__('Featured Image','parallax-one').'"/>';
 																echo '<div class="clearfix"></div>';
-																/*echo '<img class="[ img-aplicacion ]" src="//pcuervo.com/tnr/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; ICON APLICACIONES*/
+																/*echo '<img class="[ img-aplicacion ]" src="//tnrindustrial.com/wp-content/uploads/2016/04/distribucion1.png" alt="'. esc_html__('Aplicación','parallax-one') .'">'; ICON APLICACIONES*/
 															}
 														}
 													}

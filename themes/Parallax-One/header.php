@@ -160,7 +160,7 @@
 								);
 							?>
 							</nav>
-							<a class="[ hidden-xs ][ inline-block middle margin-left--small ][ standard-button button--small ]" href="http://pcuervo.com/tnr/#footer">Contáctanos</a>
+							<a class="[ hidden-xs ][ inline-block middle margin-left--small ][ standard-button button--small ]" href="http://tnrindustrial.com/#footer">Contáctanos</a>
 						</div>
                     </div>
 
