@@ -11,9 +11,17 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		<?php parallax_hook_header_bottom(); ?>
 	</header>
 	<!-- /END HOME / HEADER  -->
+
+	<?php
+		$video_home = get_page_by_path('video home');
+		$video_home_img_id = get_post_thumbnail_id($video_home);
+		$video_home_img_array = wp_get_attachment_image_src($video_home_img_id, 'full', true);
+		$video_home_img_url = $video_home_img_array[0];
+		$videos_home =  get_attached_media( 'video', $video_home->ID );
+	?>
 	<div class="[ relative ]">	<!-- VIDEO HEADER -->
 		<div class="[ hidden-sm ]">
-			<div class="[ bg-image rectangle ]" style="background-image: url('wp-content/themes/Parallax-One/images/header-bg.jpg');" alt="imagen tnr">
+			<div class="[ bg-image rectangle ]" style="background-image: url('<?php echo $video_home_img_url; ?>');" alt="imagen tnr">
 				<div class="[ container width--100 ][ title-video ]">
 					<p>PUERTAS INDUSTRIALES DE ALTO RENDIMIENTO</p>
 				</div>
@@ -22,7 +30,9 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		<div class="[ hidden-xs ][ content-video ]">
 			<!-- <iframe width="100%" height="700" src="https://www.youtube.com/embed/XMPPpV7sHRE?autoplay=1&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 			<video class="[ width--100 ][ position-video ]" autoplay loop muted>
-				<source src="wp-content/themes/Parallax-One/video/tnr_approved.mp4" type="video/mp4">
+				<?php foreach ($videos_home as $video_home) { ?>
+					<source src="<?php echo $video_home->guid; ?>" type="<?php echo $video_home->post_mime_type; ?>">
+				<?php } ?>
 			</video>
 		</div>
 	</div>

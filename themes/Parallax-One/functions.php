@@ -958,3 +958,36 @@ add_action( 'after_setup_theme', 'parallax_one_add_editor_styles' );
 
  require 'inc/cwp-update-free.php';
 
+
+
+
+
+
+/*------------------------------------*\
+/--------------------------------------\
+	#CUERVO
+\--------------------------------------/
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	#INCLUDES
+\*------------------------------------*/
+
+	require_once('inc/pages.php');
+	require_once('inc/post-types.php');
+	require_once('inc/metaboxes.php');
+	require_once('inc/taxonomies.php');
+
+
+/*------------------------------------*\
+	#CONSTANTS
+\*------------------------------------*/
+
+/**
+* Define paths to javascript, styles, theme and site.
+**/
+define( 'JSPATH', get_template_directory_uri() . '/assets/js/' );
+define( 'THEMEPATH', get_template_directory_uri() . '/' );
+define( 'SITEURL', site_url('/') );
