@@ -202,7 +202,12 @@
   </div>
 </div>
 
-  <?php parallax_hook_body_bottom(); ?>
+	<?php parallax_hook_body_bottom(); ?>
 	<?php wp_footer(); ?>
+	<script>
+		jQuery( document ).ready(function() {
+			jQuery(".js-video-wrapper").fitVids();
+		});
+	</script>
 </body>
 </html>

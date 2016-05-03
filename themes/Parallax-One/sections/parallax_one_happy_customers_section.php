@@ -141,12 +141,23 @@
 		</div>
 		<?php parallax_hook_tetimonials_bottom(); ?>
 		<!-- CERTIFICACIONES -->
-		<div class="[ padding-bottom--20 padding-top--20 ]">
-			<h3 class="dark-text">Certificaciones</h2><div class="colored-line"></div>
-			<img class="[ margin--10 ]" src="http://tnrindustrial.com/wp-content/uploads/2016/04/dasma-1.png" alt="certificación de tnr">
-			<img class="[ margin--10 ]" src="http://tnrindustrial.com/wp-content/uploads/2016/04/qas.png" alt="certificación de tnr">
-			<img class="[ margin--10 ]" src="http://tnrindustrial.com/wp-content/uploads/2016/04/ida-1.png" alt="certificación de tnr">
-		</div>
+		<?php
+		$certificaciones = new WP_Query( array('posts_per_page' => -1, 'post_type' => array( 'certificaciones' ) ) );
+		if ( $certificaciones->have_posts() ) : ?>
+
+			<div class="section-header">
+				<h3 class="dark-text">Certificaciones</h3>
+				<div class="colored-line"></div>
+			</div>
+			<div class="[ padding-bottom--20 padding-top--20 ]">
+				<?php
+				while ( $certificaciones->have_posts() ) : $certificaciones->the_post();
+					the_post_thumbnail('medium', array('class' => '[ margin--sides ]'));
+				endwhile;
+				?>
+			</div>
+
+		<?php endif; ?>
 
 	</section><!-- customers -->
 

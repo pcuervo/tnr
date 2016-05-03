@@ -157,43 +157,40 @@
 <!-- =========================
  SECTION: Videos
 ============================== -->
-<section class="[ services ]" id="videos" role="region" aria-label="">
-	<div class="section-overlay-layer">
-		<div class="container">
-			<!-- SECTION HEADER -->
-			<div class="section-header">
-				<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
-				<div class="sub-heading">Nuestras puertas en acción</div>
-			</div>
-			<?php
-				echo '<div class="services-wrap">';
-					echo '<div class="service-box">';
-					echo '<div class="single-service single-videos border-bottom-hover">';
-						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/pBKLcqCOMX4" frameborder="0" allowfullscreen></iframe>';
-						echo '</div>';
-					echo '</div>';
-					echo '</div>';
-					echo '<div class="service-box">';
-					echo '<div class="single-service single-videos border-bottom-hover">';
-						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/su1FfLp1ysk" frameborder="0" allowfullscreen></iframe>';
-						echo '</div>';
-					echo '</div>';
-					echo '</div>';
-					echo '<div class="service-box">';
-					echo '<div class="single-service single-videos border-bottom-hover">';
-						echo '<div class="[ relative ]">';
-							echo '<iframe width="100%" height="200" src="https://www.youtube.com/embed/tTCbbNrzzbI" frameborder="0" allowfullscreen></iframe>';
-						echo '</div>';
-					echo '</div>';
-					echo '</div>';
-				echo '</div>';
-			?>
-			<div class="[ clearfix ]"></div>
-			<div class="[ services-wrap ]" id="buttom-scroll">
-				<a href="http://tnrindustrial.com/#footer"><button class="standard-button">Contáctanos</button></a>
+
+<?php
+	$videos = new WP_Query( array('posts_per_page' => -1, 'post_type' => array( 'videos' ) ) );
+	$puerta_count_0 = 0;
+	$puerta_count_1 = 1;
+	if ( $videos->have_posts() ) :
+?>
+
+	<section class="[ services ]" id="videos" role="region" aria-label="">
+		<div class="section-overlay-layer">
+			<div class="container">
+				<!-- SECTION HEADER -->
+				<div class="section-header">
+					<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
+					<div class="sub-heading">Nuestras puertas en acción</div>
+				</div>
+
+				<div class="services-wrap">
+
+					<?php while ( $videos->have_posts() ) : $videos->the_post();
+						$video = get_the_content();
+					?><div class="service-box">
+						<div class="single-service single-videos border-bottom-hover">
+							<div class="[ relative ][ js-video-wrapper ]">
+								<?php echo $video; ?>
+							</div>
+						</div>
+					</div><?php endwhile; ?>
+				</div>
+				<div class="[ clearfix ]"></div>
+				<div class="[ services-wrap ]" id="buttom-scroll">
+					<a href="http://tnrindustrial.com/#footer"><button class="standard-button">Contáctanos</button></a>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif; ?>

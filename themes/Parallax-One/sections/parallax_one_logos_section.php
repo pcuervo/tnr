@@ -1,22 +1,18 @@
 <!-- =========================
  SECTION: Button header
 ============================== -->
-<?php
-	echo '<div class="[ services ]">';
-		echo '<div class="container" id="buttom-scroll">';
-			// echo '<div class="[ title-video ]">';
-			// 	echo '<p>PUERTAS INDUSTRIALES DE ALTO RENDIMIENTO</p>';
-			// echo '</div>';
-			echo '<div class="[ arrow-video ]">';
-				echo '<a href="http://tnrindustrial.com/#clients"><img class="[ icon-arrow ]" src="wp-content/themes/Parallax-One/icons/arrow-down-9.png" alt="Ícono flecha abajo"></a>';
-			echo '</div>';
-			echo '<div class="[ text-center ][ relative bottom--20 ]">';
-				echo '<h3 class="[ inline-block ][ colored-text ][ padding-bottom--20 ]">Solicita una cotización</h3>';
-				echo '<a href="http://tnrindustrial.com/#footer" class="[ margin--sides ]"><button class="standard-button">Contáctanos</button></a>';
-			echo '</div>';
-		echo '</div>';
-	echo '</div>';
-?>
+<?php $contactanos_home = get_page_by_path('contactanos-home'); ?>
+<div class="[ services ]">
+	<div class="container" id="buttom-scroll">
+		<div class="[ arrow-video ]">
+			<a href="http://tnrindustrial.com/#clients"><img class="[ icon-arrow ]" src="wp-content/themes/Parallax-One/icons/arrow-down-9.png" alt="Ícono flecha abajo"></a>
+		</div>
+		<div class="[ text-center ][ relative bottom--20 ]">
+			<h3 class="[ inline-block ][ colored-text ][ padding-bottom--20 ]"><?php echo $contactanos_home->post_content; ?></h3>
+			<a href="http://tnrindustrial.com/#footer" class="[ margin--sides ]"><button class="standard-button">Contáctanos</button></a>
+		</div>
+	</div>
+</div>
 
 <!-- =========================
  SECTION: CLIENTS LOGOs
