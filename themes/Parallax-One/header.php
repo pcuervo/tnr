@@ -13,6 +13,13 @@
 <?php parallax_hook_head_top(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO -->
+<meta name="keywords" content="dabba, dabba comida, dabba a domicilio, comida, comida a domicilio, domicilio, comida saludable, comida en polanco, polanco, menú, menú de la semana, menú de hoy, comida por menos de 100 pesos, comida gourmet, quiero dabba, si me lo dabba, dabbalicious, Medallón de res bañado en salsa de queso azul, Arrachera sonorense a la parrilla en salsa de tres pimientas">
+<meta name="description" content="<?php bloginfo('description'); ?>">
+<link rel="canonical" href="<?php echo site_url(); ?>">
+
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://use.typekit.net/isn0ktx.js"></script>
