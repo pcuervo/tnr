@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- SEO -->
-<meta name="keywords" content="dabba, dabba comida, dabba a domicilio, comida, comida a domicilio, domicilio, comida saludable, comida en polanco, polanco, menú, menú de la semana, menú de hoy, comida por menos de 100 pesos, comida gourmet, quiero dabba, si me lo dabba, dabbalicious, Medallón de res bañado en salsa de queso azul, Arrachera sonorense a la parrilla en salsa de tres pimientas">
+<meta name="keywords" content="tnr, tnr industrial, tnr doors, puertas industriales, alto rendimiento, puertas de alto rendimiento, garantía de por vida, doors, industrial doors, puertas uso rudo, puertas para exteriores, puertas para fabricas, puertas refrigeración de alta velocidad, puerta de pvc, puertas industriales, puertas rapidas, cortinas rapidas, cortinas industriales, puertas impactables, puertas para anden de carga, puertas de PVC, puertas de refrigeracion, puertas tnr">
 <meta name="description" content="<?php bloginfo('description'); ?>">
 <link rel="canonical" href="<?php echo site_url(); ?>">
 
