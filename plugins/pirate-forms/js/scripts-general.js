@@ -8,10 +8,12 @@ jQuery(document).ready(function() {
             scrollTop: jQuery('#contact').offset().top
         }, 'slow');
     }
-	
+
 	if( typeof jQuery('.pirate_forms_three_inputs').val() != 'undefined' ) {
+		 e.preventDefault();
 		 jQuery('.pirate_forms ').each(function(){
-			  jQuery(this).find('.pirate_forms_three_inputs').wrapAll('<div class="pirate_forms_three_inputs_wrap">'); 
+		 		e.preventDefault();
+			  jQuery(this).find('.pirate_forms_three_inputs').wrapAll('<div class="pirate_forms_three_inputs_wrap">');
 		  })
 	}
 });

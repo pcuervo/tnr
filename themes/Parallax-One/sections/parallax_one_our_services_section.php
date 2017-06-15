@@ -47,15 +47,15 @@
 
 						<div class="parallax_one_grid_col_3 parallax_one_grid_column_<?php echo $puerta_count_1; ?> parallax_one_grid_first">
 							<div class="service-box" parallax_onegrid-attr="this-<?php echo $puerta_count_0; ?>">
-								<div class="single-service border-bottom-hover">
+								<div class="[ bg-primary ] single-service border-bottom-hover">
 									<div class="service-icon colored-text">
 										<span class="No Icon"></span>
 									</div>
-									<h3 class="colored-text">Conoce más de nuestros diferentes modelos de puertas</h3>
+									<h3 class="color-light">Conoce más de nuestros diferentes modelos de puertas</h3>
 									<p>
 										<br>
 										<a href="http://www.tnrdoors.com/" target="_blank">
-											<button class="standard-button">
+											<button class="standard-button [ button-yellow ]">
 												Más productos
 											</button>
 										</a>

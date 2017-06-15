@@ -114,7 +114,7 @@ msgstr "Disculpe, ha ocurrido un error."
 
 #: inc/settings.php:62
 #: inc/settings.php:66
-msgid "enviar mensaje"
+msgid "Send Message"
 msgstr "Enviar mensaje"
 
 #: inc/settings.php:84

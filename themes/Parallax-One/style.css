@@ -91,13 +91,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 -----------------------------------------*/
 html {
 	font-size: 100%;
-	font-family: sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
 
 body {
-	font-family: "roboto",sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 400;
@@ -321,7 +321,7 @@ a:focus {
 /* HEADINGS */
 h1,
 h2 {
-	font-family: "roboto",sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-weight: 400;
 }
 
@@ -608,7 +608,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -624,7 +624,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1160,7 +1160,7 @@ header .navbar-brand {
 }
 
 .main-navigation {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 }
 
 .site-footer .main-navigation {
@@ -1437,7 +1437,7 @@ header .navbar-brand {
 }
 
 .intro-section h5 {
-	font-family: "roboto",sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
     margin-top: 30px;
     margin-bottom: 40px;
     line-height: 1.5;
@@ -2151,7 +2151,7 @@ header .navbar-brand {
 .timeline-box-wrap .info h3 a {
 	font-size: 22px;
 	line-height: 26px;
-    font-family: 'Cabin', Helvetica Neue, Sans-serif;
+    font-family: 'Open Sans', Helvetica Neue, Sans-serif;
     font-weight: 400;
 	color: #454545;
 }
@@ -2578,8 +2578,13 @@ button.control_next.fade-btn {
 }
 
 .contact-info .section-overlay-layer {
-	padding-top: 30px;
-	padding-bottom: 70px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	background-color: #131313;
+}
+.contact-info .section-overlay-layer a,
+.contact-info .section-overlay-layer .icon-container span {
+	color: #fff;
 }
 
 .contact-info .logo-container {
@@ -2604,7 +2609,8 @@ button.control_next.fade-btn {
 }
 
 .contact-info .contact-links a {
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 300;
 	padding-top: 65px;
 	padding-bottom: 0;
 }
@@ -4290,7 +4296,10 @@ div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, li.bbp-body di
 .footer {
 	padding-top: 40px;
 	padding-bottom: 40px;
+	background-color: #131313;
+
 }
+.footer h2 { color: #0095e1; }
 
 .footer-links li {
 	display: inline-block;
@@ -4607,8 +4616,11 @@ a:hover {
 	text-decoration: none;
 }
 
-.sticky-navigation .main-navigation li.current > a {
+.sticky-navigation .main-navigation li.current > a,
+.sticky-navigation .main-navigation li a:hover,
+.sticky-navigation .main-navigation li a:focus {
 	color: #008ed6;
+	border-bottom: 1px solid #008ed6;
 }
 
 /* INPUT FIXES */
@@ -4654,6 +4666,7 @@ a:hover {
 .color-bg {
 	background: #008ed6;
 }
+.color-light { color: #fff; }
 
 .colored-text {
 	color: #008ed6;
@@ -5226,7 +5239,7 @@ h2.screen-reader-text {
 .wp-caption-text {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -5290,7 +5303,7 @@ h2.screen-reader-text {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
 	display: block;
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -6760,6 +6773,12 @@ h2.screen-reader-text {
 .pirate-forms-submit-button{
     clear: both;
     float: left;
+	background-color: #ffba00;
+	color: #131313;
+}
+.pirate-forms-submit-button:hover {
+	color: #131313;
+	background-color: #ffc936;
 }
 
 .pirate-forms-contact-widget h3 {
@@ -7036,4 +7055,29 @@ p.edd-alert-error,
 	.edd_download {
 		width: 100% !important;
 	}
+}
+
+.js-video-wrapper iframe {
+	max-width: 100%;
+	width: 100%;
+}
+
+/*Cambios 2017*/
+.button-yellow {
+	background-color: #ffba00;
+	color: #131313;
+}
+.button-yellow:hover {
+	color: #131313;
+	background-color: #ffc936;
+}
+.bg-primary {
+	background-color: #008ed6;
+}
+.bg-light {
+	background-color: #fff;
+}
+
+.hide {
+	display: none;
 }

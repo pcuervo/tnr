@@ -8,7 +8,7 @@
  */
 ?>
 
-    <footer itemscope itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class = "footer grey-bg">
+    <footer itemscope itemtype="http://schema.org/WPFooter" id="footer" role="contentinfo" class ="footer">
 
         <div class="container">
             <div class="footer-widget-wrap">
@@ -17,7 +17,7 @@
 					if( is_active_sidebar( 'footer-area' ) ){
 				?>
 						<div itemscope itemtype="http://schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-1" class="col-md-6 col-sm-8 col-xs-12 widget-box" aria-label="<?php esc_html_e('Widgets Area 1','parallax-one'); ?>">
-							<h2 class="[ text-center ] dark-text">Contáctanos</h2><div class="colored-line"></div>
+							<h2 class="[ text-center ]">Contáctanos</h2><div class="colored-line"></div>
 							<?php
 								dynamic_sidebar( 'footer-area' );
 							?>
@@ -72,7 +72,7 @@
 						<?php parallax_hook_contact_before(); ?>
 						<div class="contact-info" id="contactinfo" role="region" aria-label="<?php esc_html_e('Contact Info','parallax-one'); ?>">
 							<?php parallax_hook_contact_top(); ?>
-							<div class="section-overlay-layer [ hidden-xs ]">
+							<div class="section-overlay-layer">
 								<div class="container">
 
 									<!-- CONTACT INFO -->
@@ -85,10 +85,10 @@
 													foreach($parallax_one_contact_info_item_decoded as $parallax_one_contact_item){
 														if(!empty($parallax_one_contact_item->link)){
 															parallax_hook_contact_entry_before();
-															echo '<div class="col-sm-4 contact-link-box col-xs-12">';
+															echo '<div class="col-sm-4 contact-link-box col-xs-12  [ hidden-xs ]">';
 															parallax_hook_contact_entry_top();
 															if(!empty($parallax_one_contact_item->icon_value)){
-																echo '<div class="icon-container"><span class="'.esc_attr($parallax_one_contact_item->icon_value).' colored-text"></span></div>';
+																echo '<div class="icon-container"><span class="'.esc_attr($parallax_one_contact_item->icon_value).'"></span></div>';
 															}
 															if(!empty($parallax_one_contact_item->text)){
 																echo '<a href="'.$parallax_one_contact_item->link.'" class="strong">'.html_entity_decode($parallax_one_contact_item->text).'</a>';
@@ -98,7 +98,7 @@
 															parallax_hook_contact_entry_after();
 														} else {
 															parallax_hook_contact_entry_before();
-															echo '<div class="col-sm-4 contact-link-box  col-xs-12">';
+															echo '<div class="col-sm-4 contact-link-box  col-xs-12  [ hidden-xs ]">';
 															parallax_hook_contact_entry_top();
 															if(!empty($parallax_one_contact_item->icon_value)){
 																echo '<div class="icon-container"><span class="'.esc_attr($parallax_one_contact_item->icon_value).' colored-text"></span></div>';
@@ -118,6 +118,12 @@
 											}
 
 										?>
+										<div class="col-sm-4 contact-link-box col-xs-12">
+											<div class="icon-container">
+												<span class="icon-social-facebook"></span>
+											</div>
+											<a href="https://www.facebook.com/TNRpuertasindustriales/" class="strong">TNRpuertasindustriales</a>
+										</div>
 									</div><!-- .contact-links -->
 								</div><!-- .container -->
 							</div>
@@ -128,7 +134,7 @@
 				}
 			?>
 
-	        <div class="footer-bottom-wrap">
+	        <div class="footer-bottom-wrap [ hide ]">
 				<?php
 					global $wp_customize;
 
@@ -179,7 +185,7 @@
 
 	        </div><!-- .footer-bottom-wrap -->
 
-			<div class="[ text-center font-size--small ] [ margin-top--small ]">Todos los derechos reservados.</div>
+			<div class="[ text-center font-size--small ] [ margin-top--small ][ color-light ]">Todos los derechos reservados.</div>
 
             <?php echo apply_filters("parallax_one_plus_footer_text_filter",'<div class="[ hidden ] powered-by"><a href="https://themeisle.com/themes/parallax-one/" target="_blank" rel="nofollow">Parallax One </a>'.esc_html__('powered by ','parallax-one').'<a class="" href="http://wordpress.org/" target="_blank" rel="nofollow">'.esc_html__('WordPress','parallax-one').'</a></div>');?>
 

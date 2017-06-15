@@ -165,13 +165,13 @@
 	if ( $videos->have_posts() ) :
 ?>
 
-	<section class="[ services ]" id="videos" role="region" aria-label="">
+	<section class="[ services ][ bg-primary ]" id="videos" role="region" aria-label="">
 		<div class="section-overlay-layer">
 			<div class="container">
 				<!-- SECTION HEADER -->
 				<div class="section-header">
-					<h2 class="dark-text">Videos</h2><div class="colored-line"></div>
-					<div class="sub-heading">Nuestras puertas en acción</div>
+					<h2 class="[ color-light ]">Videos</h2><div class="colored-line [ bg-light ]"></div>
+					<div class="[ color-light ] sub-heading">Nuestras puertas en acción</div>
 				</div>
 
 				<div class="services-wrap">
@@ -188,7 +188,7 @@
 				</div>
 				<div class="[ clearfix ]"></div>
 				<div class="[ services-wrap ]" id="buttom-scroll">
-					<a href="http://tnrindustrial.com/#footer"><button class="standard-button">Contáctanos</button></a>
+					<a href="http://tnrindustrial.com/#footer"><button class="standard-button [ button-yellow ]">Contáctanos</button></a>
 				</div>
 			</div>
 		</div>
