@@ -820,9 +820,14 @@ big {
    2.6 SECTION HEADERS
 -----------------------------------------*/
 .section-header {
-	margin-top: 90px;
+	margin-top: 40px;
 	margin-bottom: 60px;
 	text-align: center;
+}
+
+.testimonials#customers > .section-header {
+	margin-top: 0px!important;
+	margin-bottom: 25px;
 }
 
 .section-header h2 {
@@ -1577,6 +1582,15 @@ header .navbar-brand {
 	text-align: center;
 	position: relative;
 	padding-bottom: 50px;
+}
+
+#videos .section-header,
+#testimonials .section-header + .services-wrap {
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+#videos .section-header + .services-wrap {
+	padding-bottom: 0px;
 }
 
 .img-aplicacion {
@@ -2428,7 +2442,7 @@ button.control_next.fade-btn {
 }
 
 .testimonials .section-overlay-layer {
-	padding-bottom: 20px;
+	padding-bottom: 0px!important;
 }
 
 .feedback {
@@ -2492,9 +2506,9 @@ button.control_next.fade-btn {
 }
 
 .testimonials-box .feedback {
-  height: 150px;
-  padding: 40px 0 40px 0;
-  margin: 40px 0 30px 0;
+  height: 135px;
+  padding: 40px 0 30px 0;
+  margin: 40px 0 0px 0;
   background: #ffffff;
   border-top: 1px solid #eaeaea;
   border-left: 1px solid #eaeaea;
@@ -7080,4 +7094,34 @@ p.edd-alert-error,
 
 .hide {
 	display: none;
+}
+
+.col-6 {
+	width: 49%;
+	display: inline-block;
+}
+.col-12 {
+	width: 99%;
+}
+.col-12 textarea {
+	height: 50px!important;
+}
+
+.col-12 textarea,
+.col-6 input{
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.ajax-loader { display: none!important; }
+
+.wpcf7-response-output {
+	background-color: transparent!important;
+	color: #fff!important;
+}
+
+.wpcf7-form {
+	margin-top: 30px!important;
 }
